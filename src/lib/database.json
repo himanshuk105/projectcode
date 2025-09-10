@@ -1,0 +1,18 @@
+{
+  "/": {
+    "content": [
+      {
+        "type": "HeadingBlock",
+        "props": {
+          "title": "Change path to /edit",
+          "id": "HeadingBlock-1694032984497"
+        }
+      }
+    ],
+    "root": {
+      "props": {
+        "title": ""
+      }
+    }
+  }
+}
