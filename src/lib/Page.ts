@@ -1287,3 +1287,1220 @@ export const Data = {
   ],
   symbols: [],
 }
+
+export const data1 = {
+  dataSources: [],
+  assets: [],
+  styles: [
+    {
+      selectors: ['body'],
+      style: {
+        'font-family': 'Inter, system-ui, sans-serif',
+        background: '#0f172a',
+        'line-height': '1.6',
+        color: '#f8fafc',
+        margin: '0',
+        padding: '0',
+      },
+    },
+    {
+      selectors: ['#heroGradient'],
+      style: {
+        background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+      },
+    },
+    {
+      selectors: ['#strengthGradient'],
+      style: {
+        background: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
+      },
+    },
+    {
+      selectors: ['#fitnessGradient'],
+      style: {
+        background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
+      },
+    },
+    {
+      selectors: [
+        {
+          name: '@media-(min-width:-768px)',
+          label: '@media (min-width: 768px)',
+        },
+      ],
+      style: {
+        '#heroButtons': {
+          'flex-direction': 'row',
+          'justify-content': 'center',
+          gap: '24px',
+        },
+        '#navLinks': {
+          display: 'flex',
+        },
+        '#featureCard:hover': {
+          transform: 'translateY(-8px)',
+          'box-shadow': '0 20px 40px rgba(239, 68, 68, 0.3)',
+        },
+        '#programCard:hover': {
+          transform: 'translateY(-8px)',
+          'box-shadow': '0 20px 40px rgba(139, 92, 246, 0.3)',
+        },
+        '#heroPrimaryBtn:hover': {
+          background: 'linear-gradient(135deg, #dc2626 0%, #b91c1c 100%)',
+          transform: 'scale(1.05)',
+        },
+        '#heroSecondaryBtn:hover': {
+          background: 'rgba(255, 255, 255, 0.2)',
+          color: '#ffffff',
+        },
+        '#ctaButton:hover': {
+          transform: 'scale(1.05)',
+          background: 'linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%)',
+        },
+        '#joinBtn:hover': {
+          background: 'linear-gradient(135deg, #059669 0%, #047857 100%)',
+          transform: 'translateY(-2px)',
+        },
+        '#navLink:hover': {
+          color: '#ef4444',
+          background: 'rgba(239, 68, 68, 0.1)',
+        },
+      },
+    },
+    {
+      selectors: ['#mainWrapper'],
+      wrapper: 1,
+      style: {},
+    },
+  ],
+  pages: [
+    {
+      name: 'Home - Elite Fitness',
+      frames: [
+        {
+          component: {
+            type: 'wrapper',
+            stylable: [
+              'background',
+              'background-color',
+              'background-image',
+              'background-repeat',
+              'background-attachment',
+              'background-position',
+              'background-size',
+            ],
+            attributes: {
+              id: 'mainWrapper',
+            },
+            components: [
+              {
+                type: 'comment',
+                content: ' Navigation Header ',
+              },
+              {
+                tagName: 'nav',
+                classes: [
+                  'fixed',
+                  'top-0',
+                  'w-full',
+                  'z-50',
+                  'bg-slate-900',
+                  'bg-opacity-95',
+                  'backdrop-blur-sm',
+                  'border-b',
+                  'border-red-500',
+                  'border-opacity-30',
+                ],
+                components: [
+                  {
+                    classes: [
+                      'container',
+                      'mx-auto',
+                      'px-6',
+                      'py-4',
+                      'flex',
+                      'justify-between',
+                      'items-center',
+                    ],
+                    components: [
+                      {
+                        tagName: 'h2',
+                        type: 'text',
+                        classes: ['text-2xl', 'font-bold', 'text-red-500'],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Elite Fitness',
+                          },
+                        ],
+                      },
+                      {
+                        classes: ['hidden', 'md:flex', 'space-x-8'],
+                        attributes: {
+                          id: 'navLinks',
+                        },
+                        components: [
+                          {
+                            type: 'link',
+                            classes: [
+                              'text-white',
+                              'hover:text-red-500',
+                              'px-3',
+                              'py-2',
+                              'rounded-lg',
+                              'transition',
+                              'duration-300',
+                            ],
+                            attributes: {
+                              href: '#home',
+                              id: 'navLink',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Home',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'link',
+                            classes: [
+                              'text-white',
+                              'hover:text-red-500',
+                              'px-3',
+                              'py-2',
+                              'rounded-lg',
+                              'transition',
+                              'duration-300',
+                            ],
+                            attributes: {
+                              href: '#programs',
+                              id: 'navLink',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Programs',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'link',
+                            classes: [
+                              'text-white',
+                              'hover:text-red-500',
+                              'px-3',
+                              'py-2',
+                              'rounded-lg',
+                              'transition',
+                              'duration-300',
+                            ],
+                            attributes: {
+                              href: '#about',
+                              id: 'navLink',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'About',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'link',
+                            classes: [
+                              'bg-red-500',
+                              'text-white',
+                              'px-6',
+                              'py-2',
+                              'rounded-lg',
+                              'hover:bg-red-600',
+                              'transition',
+                              'duration-300',
+                            ],
+                            attributes: {
+                              href: '#join',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Join Now',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'comment',
+                content: ' Hero Section 1 - Main Landing ',
+              },
+              {
+                tagName: 'section',
+                classes: [
+                  'flex',
+                  'flex-col',
+                  'md:flex-row',
+                  'items-center',
+                  'justify-between',
+                  'px-6',
+                  'md:px-16',
+                  'lg:px-24',
+                  'py-32',
+                  'pt-40',
+                  'gap-12',
+                  'min-h-screen',
+                ],
+                attributes: {
+                  id: 'heroGradient',
+                },
+                components: [
+                  {
+                    type: 'comment',
+                    content: ' Text Content ',
+                  },
+                  {
+                    classes: ['flex-1', 'text-center', 'md:text-left', 'z-10'],
+                    components: [
+                      {
+                        tagName: 'h1',
+                        type: 'text',
+                        classes: [
+                          'text-5xl',
+                          'lg:text-7xl',
+                          'font-black',
+                          'text-white',
+                          'mb-6',
+                          'leading-tight',
+                          'drop-shadow-2xl',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'TRANSFORM YOUR BODY',
+                          },
+                        ],
+                      },
+                      {
+                        tagName: 'p',
+                        type: 'text',
+                        classes: [
+                          'text-xl',
+                          'text-red-100',
+                          'mb-10',
+                          'max-w-lg',
+                          'mx-auto',
+                          'md:mx-0',
+                          'font-medium',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content:
+                              'Join Elite Fitness and unlock your potential with world-class equipment, expert trainers, and personalized workout programs.',
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'flex',
+                          'flex-col',
+                          'md:flex-row',
+                          'gap-6',
+                          'justify-center',
+                          'md:justify-start',
+                        ],
+                        attributes: {
+                          id: 'heroButtons',
+                        },
+                        components: [
+                          {
+                            type: 'link',
+                            classes: [
+                              'inline-block',
+                              'bg-white',
+                              'text-red-600',
+                              'text-lg',
+                              'font-bold',
+                              'px-10',
+                              'py-4',
+                              'rounded-xl',
+                              'shadow-2xl',
+                              'transition',
+                              'duration-300',
+                              'transform',
+                            ],
+                            attributes: {
+                              href: '#membership',
+                              id: 'heroPrimaryBtn',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Start Your Journey',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'link',
+                            classes: [
+                              'inline-block',
+                              'border-2',
+                              'border-white',
+                              'text-white',
+                              'text-lg',
+                              'font-semibold',
+                              'px-10',
+                              'py-4',
+                              'rounded-xl',
+                              'transition',
+                              'duration-300',
+                              'hover:bg-white',
+                              'hover:text-red-600',
+                            ],
+                            attributes: {
+                              href: '#tour',
+                              id: 'heroSecondaryBtn',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Take a Tour',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    type: 'comment',
+                    content: ' Hero Image ',
+                  },
+                  {
+                    classes: ['flex-1', 'flex', 'justify-center', 'relative'],
+                    components: [
+                      {
+                        type: 'image',
+                        resizable: {
+                          ratioDefault: 1,
+                        },
+                        classes: [
+                          'max-w-full',
+                          'h-auto',
+                          'rounded-2xl',
+                          'shadow-2xl',
+                          'transform',
+                          'hover:scale-105',
+                          'transition',
+                          'duration-500',
+                        ],
+                        attributes: {
+                          src: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+                          alt: 'Fitness Training',
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'comment',
+                content: ' Features Section ',
+              },
+              {
+                tagName: 'section',
+                classes: ['py-20', 'px-6', 'md:px-16', 'lg:px-24', 'bg-slate-800'],
+                components: [
+                  {
+                    tagName: 'h2',
+                    type: 'text',
+                    classes: ['text-4xl', 'font-bold', 'text-center', 'text-white', 'mb-16'],
+                    components: [
+                      {
+                        type: 'textnode',
+                        content: 'Why Choose Elite Fitness?',
+                      },
+                    ],
+                  },
+                  {
+                    classes: ['grid', 'grid-cols-1', 'md:grid-cols-3', 'gap-8'],
+                    components: [
+                      {
+                        classes: [
+                          'bg-slate-700',
+                          'p-8',
+                          'rounded-xl',
+                          'text-center',
+                          'hover:shadow-xl',
+                          'transition',
+                          'duration-300',
+                        ],
+                        attributes: {
+                          id: 'featureCard',
+                        },
+                        components: [
+                          {
+                            tagName: 'h3',
+                            type: 'text',
+                            classes: ['text-2xl', 'font-bold', 'text-red-500', 'mb-4'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Expert Trainers',
+                              },
+                            ],
+                          },
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            classes: ['text-gray-300'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'Certified professionals ready to guide your fitness journey with personalized training programs.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'bg-slate-700',
+                          'p-8',
+                          'rounded-xl',
+                          'text-center',
+                          'hover:shadow-xl',
+                          'transition',
+                          'duration-300',
+                        ],
+                        attributes: {
+                          id: 'featureCard',
+                        },
+                        components: [
+                          {
+                            tagName: 'h3',
+                            type: 'text',
+                            classes: ['text-2xl', 'font-bold', 'text-red-500', 'mb-4'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Modern Equipment',
+                              },
+                            ],
+                          },
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            classes: ['text-gray-300'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'State-of-the-art fitness equipment and facilities to maximize your workout potential.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'bg-slate-700',
+                          'p-8',
+                          'rounded-xl',
+                          'text-center',
+                          'hover:shadow-xl',
+                          'transition',
+                          'duration-300',
+                        ],
+                        attributes: {
+                          id: 'featureCard',
+                        },
+                        components: [
+                          {
+                            tagName: 'h3',
+                            type: 'text',
+                            classes: ['text-2xl', 'font-bold', 'text-red-500', 'mb-4'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: '24/7 Access',
+                              },
+                            ],
+                          },
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            classes: ['text-gray-300'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'Train on your schedule with round-the-clock gym access for ultimate flexibility.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+            head: {
+              type: 'head',
+            },
+            docEl: {
+              tagName: 'html',
+            },
+          },
+          id: 'homePageFrame',
+        },
+      ],
+      id: 'homePage',
+    },
+    {
+      name: 'Programs - Elite Fitness',
+      frames: [
+        {
+          component: {
+            type: 'wrapper',
+            stylable: [
+              'background',
+              'background-color',
+              'background-image',
+              'background-repeat',
+              'background-attachment',
+              'background-position',
+              'background-size',
+            ],
+            attributes: {
+              id: 'programsWrapper',
+            },
+            components: [
+              {
+                type: 'comment',
+                content: ' Navigation Header ',
+              },
+              {
+                tagName: 'nav',
+                classes: [
+                  'fixed',
+                  'top-0',
+                  'w-full',
+                  'z-50',
+                  'bg-slate-900',
+                  'bg-opacity-95',
+                  'backdrop-blur-sm',
+                  'border-b',
+                  'border-purple-500',
+                  'border-opacity-30',
+                ],
+                components: [
+                  {
+                    classes: [
+                      'container',
+                      'mx-auto',
+                      'px-6',
+                      'py-4',
+                      'flex',
+                      'justify-between',
+                      'items-center',
+                    ],
+                    components: [
+                      {
+                        tagName: 'h2',
+                        type: 'text',
+                        classes: ['text-2xl', 'font-bold', 'text-purple-500'],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Elite Fitness',
+                          },
+                        ],
+                      },
+                      {
+                        classes: ['hidden', 'md:flex', 'space-x-8'],
+                        components: [
+                          {
+                            type: 'link',
+                            classes: [
+                              'text-white',
+                              'hover:text-purple-500',
+                              'px-3',
+                              'py-2',
+                              'rounded-lg',
+                              'transition',
+                              'duration-300',
+                            ],
+                            attributes: {
+                              href: '#home',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Home',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'link',
+                            classes: [
+                              'text-purple-500',
+                              'px-3',
+                              'py-2',
+                              'rounded-lg',
+                              'bg-purple-500',
+                              'bg-opacity-20',
+                            ],
+                            attributes: {
+                              href: '#programs',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Programs',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'link',
+                            classes: [
+                              'text-white',
+                              'hover:text-purple-500',
+                              'px-3',
+                              'py-2',
+                              'rounded-lg',
+                              'transition',
+                              'duration-300',
+                            ],
+                            attributes: {
+                              href: '#about',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'About',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'link',
+                            classes: [
+                              'bg-purple-500',
+                              'text-white',
+                              'px-6',
+                              'py-2',
+                              'rounded-lg',
+                              'hover:bg-purple-600',
+                              'transition',
+                              'duration-300',
+                            ],
+                            attributes: {
+                              href: '#join',
+                              id: 'joinBtn',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Join Now',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'comment',
+                content: ' Hero Section 2 - Programs Page ',
+              },
+              {
+                tagName: 'section',
+                classes: [
+                  'flex',
+                  'flex-col',
+                  'md:flex-row',
+                  'items-center',
+                  'justify-between',
+                  'px-6',
+                  'md:px-16',
+                  'lg:px-24',
+                  'py-32',
+                  'pt-40',
+                  'gap-12',
+                  'min-h-screen',
+                ],
+                attributes: {
+                  id: 'fitnessGradient',
+                },
+                components: [
+                  {
+                    type: 'comment',
+                    content: ' Text Content ',
+                  },
+                  {
+                    classes: ['flex-1', 'text-center', 'md:text-left', 'z-10'],
+                    components: [
+                      {
+                        tagName: 'h1',
+                        type: 'text',
+                        classes: [
+                          'text-5xl',
+                          'lg:text-7xl',
+                          'font-black',
+                          'text-white',
+                          'mb-6',
+                          'leading-tight',
+                          'drop-shadow-2xl',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'ELITE PROGRAMS',
+                          },
+                        ],
+                      },
+                      {
+                        tagName: 'p',
+                        type: 'text',
+                        classes: [
+                          'text-xl',
+                          'text-purple-100',
+                          'mb-10',
+                          'max-w-lg',
+                          'mx-auto',
+                          'md:mx-0',
+                          'font-medium',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content:
+                              'Discover specialized training programs designed to help you achieve your fitness goals faster and more effectively.',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'link',
+                        classes: [
+                          'inline-block',
+                          'bg-white',
+                          'text-purple-600',
+                          'text-lg',
+                          'font-bold',
+                          'px-10',
+                          'py-4',
+                          'rounded-xl',
+                          'shadow-2xl',
+                          'transition',
+                          'duration-300',
+                          'transform',
+                          'hover:scale-105',
+                        ],
+                        attributes: {
+                          href: '#explore-programs',
+                          id: 'ctaButton',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Explore Programs',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    type: 'comment',
+                    content: ' Hero Image ',
+                  },
+                  {
+                    classes: ['flex-1', 'flex', 'justify-center', 'relative'],
+                    components: [
+                      {
+                        type: 'image',
+                        resizable: {
+                          ratioDefault: 1,
+                        },
+                        classes: [
+                          'max-w-full',
+                          'h-auto',
+                          'rounded-2xl',
+                          'shadow-2xl',
+                          'transform',
+                          'hover:scale-105',
+                          'transition',
+                          'duration-500',
+                        ],
+                        attributes: {
+                          src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+                          alt: 'Fitness Programs',
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'comment',
+                content: ' Programs Grid Section ',
+              },
+              {
+                tagName: 'section',
+                classes: ['py-20', 'px-6', 'md:px-16', 'lg:px-24', 'bg-slate-800'],
+                components: [
+                  {
+                    tagName: 'h2',
+                    type: 'text',
+                    classes: ['text-4xl', 'font-bold', 'text-center', 'text-white', 'mb-16'],
+                    components: [
+                      {
+                        type: 'textnode',
+                        content: 'Our Training Programs',
+                      },
+                    ],
+                  },
+                  {
+                    classes: ['grid', 'grid-cols-1', 'md:grid-cols-2', 'lg:grid-cols-3', 'gap-8'],
+                    components: [
+                      {
+                        classes: [
+                          'bg-gradient-to-br',
+                          'from-orange-500',
+                          'to-red-600',
+                          'p-8',
+                          'rounded-xl',
+                          'text-center',
+                          'hover:shadow-2xl',
+                          'transition',
+                          'duration-300',
+                          'transform',
+                        ],
+                        attributes: {
+                          id: 'programCard',
+                        },
+                        components: [
+                          {
+                            tagName: 'h3',
+                            type: 'text',
+                            classes: ['text-2xl', 'font-bold', 'text-white', 'mb-4'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Strength Training',
+                              },
+                            ],
+                          },
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            classes: ['text-orange-100', 'mb-6'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'Build muscle, increase power, and transform your physique with our comprehensive strength training program.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'bg-gradient-to-br',
+                          'from-blue-500',
+                          'to-cyan-600',
+                          'p-8',
+                          'rounded-xl',
+                          'text-center',
+                          'hover:shadow-2xl',
+                          'transition',
+                          'duration-300',
+                          'transform',
+                        ],
+                        attributes: {
+                          id: 'programCard',
+                        },
+                        components: [
+                          {
+                            tagName: 'h3',
+                            type: 'text',
+                            classes: ['text-2xl', 'font-bold', 'text-white', 'mb-4'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Cardio Blast',
+                              },
+                            ],
+                          },
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            classes: ['text-blue-100', 'mb-6'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'High-intensity cardiovascular workouts designed to burn fat and improve endurance.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'bg-gradient-to-br',
+                          'from-green-500',
+                          'to-emerald-600',
+                          'p-8',
+                          'rounded-xl',
+                          'text-center',
+                          'hover:shadow-2xl',
+                          'transition',
+                          'duration-300',
+                          'transform',
+                        ],
+                        attributes: {
+                          id: 'programCard',
+                        },
+                        components: [
+                          {
+                            tagName: 'h3',
+                            type: 'text',
+                            classes: ['text-2xl', 'font-bold', 'text-white', 'mb-4'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Yoga & Flexibility',
+                              },
+                            ],
+                          },
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            classes: ['text-green-100', 'mb-6'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'Improve flexibility, balance, and mental wellness through our guided yoga and stretching sessions.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'bg-gradient-to-br',
+                          'from-purple-500',
+                          'to-pink-600',
+                          'p-8',
+                          'rounded-xl',
+                          'text-center',
+                          'hover:shadow-2xl',
+                          'transition',
+                          'duration-300',
+                          'transform',
+                        ],
+                        attributes: {
+                          id: 'programCard',
+                        },
+                        components: [
+                          {
+                            tagName: 'h3',
+                            type: 'text',
+                            classes: ['text-2xl', 'font-bold', 'text-white', 'mb-4'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'HIIT Bootcamp',
+                              },
+                            ],
+                          },
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            classes: ['text-purple-100', 'mb-6'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'High-intensity interval training that maximizes calorie burn and builds functional strength.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'bg-gradient-to-br',
+                          'from-yellow-500',
+                          'to-orange-600',
+                          'p-8',
+                          'rounded-xl',
+                          'text-center',
+                          'hover:shadow-2xl',
+                          'transition',
+                          'duration-300',
+                          'transform',
+                        ],
+                        attributes: {
+                          id: 'programCard',
+                        },
+                        components: [
+                          {
+                            tagName: 'h3',
+                            type: 'text',
+                            classes: ['text-2xl', 'font-bold', 'text-white', 'mb-4'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Personal Training',
+                              },
+                            ],
+                          },
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            classes: ['text-yellow-100', 'mb-6'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'One-on-one coaching tailored to your specific goals and fitness level for maximum results.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'bg-gradient-to-br',
+                          'from-indigo-500',
+                          'to-purple-600',
+                          'p-8',
+                          'rounded-xl',
+                          'text-center',
+                          'hover:shadow-2xl',
+                          'transition',
+                          'duration-300',
+                          'transform',
+                        ],
+                        attributes: {
+                          id: 'programCard',
+                        },
+                        components: [
+                          {
+                            tagName: 'h3',
+                            type: 'text',
+                            classes: ['text-2xl', 'font-bold', 'text-white', 'mb-4'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'CrossFit Elite',
+                              },
+                            ],
+                          },
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            classes: ['text-indigo-100', 'mb-6'],
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'Functional fitness combining strength, cardio, and agility for complete athletic development.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'comment',
+                content: ' Call to Action Section ',
+              },
+              {
+                tagName: 'section',
+                classes: ['py-20', 'px-6', 'md:px-16', 'lg:px-24', 'bg-slate-900', 'text-center'],
+                components: [
+                  {
+                    tagName: 'h2',
+                    type: 'text',
+                    classes: ['text-4xl', 'font-bold', 'text-white', 'mb-6'],
+                    components: [
+                      {
+                        type: 'textnode',
+                        content: 'Ready to Start Your Fitness Journey?',
+                      },
+                    ],
+                  },
+                  {
+                    tagName: 'p',
+                    type: 'text',
+                    classes: ['text-xl', 'text-gray-300', 'mb-10', 'max-w-2xl', 'mx-auto'],
+                    components: [
+                      {
+                        type: 'textnode',
+                        content:
+                          'Join thousands of members who have transformed their lives at Elite Fitness. Your journey to a stronger, healthier you starts here.',
+                      },
+                    ],
+                  },
+                  {
+                    type: 'link',
+                    classes: [
+                      'inline-block',
+                      'bg-gradient-to-r',
+                      'from-purple-500',
+                      'to-pink-600',
+                      'text-white',
+                      'text-lg',
+                      'font-bold',
+                      'px-12',
+                      'py-4',
+                      'rounded-xl',
+                      'shadow-2xl',
+                      'transition',
+                      'duration-300',
+                      'transform',
+                      'hover:scale-105',
+                    ],
+                    attributes: {
+                      href: '#membership',
+                    },
+                    components: [
+                      {
+                        type: 'textnode',
+                        content: 'Get Membership Now',
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+            head: {
+              type: 'head',
+            },
+            docEl: {
+              tagName: 'html',
+            },
+          },
+          id: 'programsPageFrame',
+        },
+      ],
+      id: 'programsPage',
+    },
+  ],
+  symbols: [],
+}

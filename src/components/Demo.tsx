@@ -1,16 +1,17 @@
 'use client'
-import React, { useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Editor, EditorConfig } from 'grapesjs'
 import 'grapesjs/dist/css/grapes.min.css'
-import GjsEditor, { AssetsProvider, Canvas, ModalProvider } from '@grapesjs/react'
+import GjsEditor, { Canvas, ModalProvider, useEditor } from '@grapesjs/react'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { MAIN_BORDER_COLOR } from './components/common'
 import RightSidebar from './components/RightSidebar'
 import CustomModal from './components/CustomModal'
-import CustomAssetManager from './components/CustomAssetManager'
+
 import Topbar from './components/Topbar'
 import AISidebar from './components/LeftSide'
-import { Data } from '@/lib/Page'
+import { Data, data1 } from '@/lib/Page'
+import axios from 'axios'
 
 const theme = createTheme({
   palette: {
@@ -28,62 +29,68 @@ const gjsOptions: EditorConfig = {
   canvas: {
     styles: ['https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'],
   },
-  // projectData: Data,
-  // projectData: {
-  //   assets: [
-  //     'https://via.placeholder.com/350x250/78c5d6/fff',
-  //     'https://via.placeholder.com/350x250/459ba8/fff',
-  //     'https://via.placeholder.com/350x250/79c267/fff',
-  //     'https://via.placeholder.com/350x250/c5d647/fff',
-  //     'https://via.placeholder.com/350x250/f28c33/fff',
-  //   ],
-  //   pages: [
-  //     {
-  //       name: 'Home page',
-  //       component: `<h1>GrapesJS React Custom UI</h1>`,
-  //     },
-  //   ],
-  // },
 }
 
 const DefaultEditor = () => {
-  const editorRef = useRef<Editor | null>(null)
+  const [filtered, setFiltered] = useState('sports')
+  const [prData, setPrData] = useState(null)
+  const [selectedPage, setSelectedPage] = useState(null)
 
-  const onEditor = (editor: Editor) => {
+  // const handleSelectTempalte = async (id: string) => {
+  //   const data = structuredClone(prData)
+  //   if (data != null) {
+  //     const pageData = data.find((d: any) => d.id == id)
+  //     setSelectedPage(pageData)
+  //     final.loadProjectData(pageData)
+  //   }
+  // }
+
+  const onEditor = async (editor: Editor) => {
     console.log('Editor loaded')
+    // const fi = await payloadInstance.find({
+    //   collection: 'pagetemplate',
+    //   where: { ['Template Type.Category Name']: { equals: 'sports' } },
+    // })
 
-    editor.loadProjectData(Data)
+    const data = await axios(
+      'http://localhost:3000/api/pagetemplate?where[Template_Type.slug][equals]=sports',
+    )
 
-    editor.BlockManager.add('hero-split', {
-      label: 'Hero Split',
-      category: 'Hero Sections',
+    const respone = data.data
+    setPrData(respone.docs)
+
+    editor.loadProjectData(selectedPage!)
+
+    editor.BlockManager.add('hero-split-tailwindcsss', {
+      label: 'Hero',
+      category: 'Major',
       media: `<svg style="width:24px;height:24px" viewBox="0 0 24 24">
             <path d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z" />
-        </svg>`,
+          </svg>`,
       content: `
-          <section style="display:flex; align-items:center; justify-content:space-between;
-                          padding:80px 40px; background:#ffffff; gap:40px;">
-            <div style="flex:1;">
-              <h1 style="font-size:42px; font-weight:700; margin-bottom:20px; color:#0f172a;">
-                Design Without Limits
-              </h1>
-              <p style="font-size:18px; color:#334155; margin-bottom:30px;">
-                Create responsive, modern websites with just a few clicks using our editor.
-              </p>
-              <a href="#learn-more"
-                 style="display:inline-block; padding:12px 28px; background:#10b981; color:#fff;
-                        font-size:16px; border-radius:8px; text-decoration:none;">
-                Learn More
-              </a>
-            </div>
-            <div style="flex:1; text-align:center;">
-              <img src="https://via.placeholder.com/500x350"
-                   alt="Hero Illustration"
-                   style="max-width:100%; border-radius:12px;
-                          box-shadow:0 4px 10px rgba(0,0,0,0.1);"/>
-            </div>
-          </section>
-        `,
+    <section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 lg:px-24 py-20 gap-10 bg-blue-500">
+      <!-- Text Content -->
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          Design Without Limits
+        </h1>
+        <p class="text-lg text-gray-600 mb-8 max-w-md mx-auto md:mx-0">
+          Create responsive, modern websites with just a few clicks using our editor.
+        </p>
+        <a href="#learn-more"
+           class="inline-block bg-red-500 hover:bg-emerald-600 text-black text-base font-medium px-8 py-3 rounded-lg shadow-md transition duration-300">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Image -->
+      <div class="flex-1 flex justify-center">
+        <img src="https://via.placeholder.com/500x350"
+             alt="Hero Illustration"
+             class="max-w-full rounded-xl shadow-lg" />
+      </div>
+    </section>
+  `,
     })
     ;(window as any).editor = editor
   }
@@ -115,7 +122,10 @@ const DefaultEditor = () => {
               <Canvas className="flex-grow gjs-custom-editor-canvas" />
             </div>
 
-            <RightSidebar className={`gjs-column-r w-[300px] border-l ${MAIN_BORDER_COLOR}`} />
+            <RightSidebar
+              className={`gjs-column-r w-[300px] border-l ${MAIN_BORDER_COLOR}`}
+              prData={prData}
+            />
           </div>
           <ModalProvider>
             {({ open, title, content, close }) => (

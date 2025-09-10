@@ -69,6 +69,12 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
+    websites: Website;
+    projects: Project;
+    pagetemplate: Pagetemplate;
+    templatecategories: Templatecategory;
+    singlepagetemplate: Singlepagetemplate;
+    comptemplate: Comptemplate;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -77,6 +83,12 @@ export interface Config {
   collectionsSelect: {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    websites: WebsitesSelect<false> | WebsitesSelect<true>;
+    projects: ProjectsSelect<false> | ProjectsSelect<true>;
+    pagetemplate: PagetemplateSelect<false> | PagetemplateSelect<true>;
+    templatecategories: TemplatecategoriesSelect<false> | TemplatecategoriesSelect<true>;
+    singlepagetemplate: SinglepagetemplateSelect<false> | SinglepagetemplateSelect<true>;
+    comptemplate: ComptemplateSelect<false> | ComptemplateSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
@@ -158,6 +170,107 @@ export interface Media {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "websites".
+ */
+export interface Website {
+  id: string;
+  domain_name?: string | null;
+  'Page Data'?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "projects".
+ */
+export interface Project {
+  id: string;
+  'Business Name'?: string | null;
+  Websites?: (string | Website)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pagetemplate".
+ */
+export interface Pagetemplate {
+  id: string;
+  Template_Name?: string | null;
+  Template_Type?: (string | Templatecategory)[] | null;
+  Template_Code?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "templatecategories".
+ */
+export interface Templatecategory {
+  id: string;
+  'Category Name'?: string | null;
+  slug?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "singlepagetemplate".
+ */
+export interface Singlepagetemplate {
+  id: string;
+  template_Name?: string | null;
+  template_Type?: (string | Templatecategory)[] | null;
+  template_Code?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "comptemplate".
+ */
+export interface Comptemplate {
+  id: string;
+  template_Name?: string | null;
+  template_Type?: (string | Templatecategory)[] | null;
+  template_Code?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
@@ -170,6 +283,30 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'media';
         value: string | Media;
+      } | null)
+    | ({
+        relationTo: 'websites';
+        value: string | Website;
+      } | null)
+    | ({
+        relationTo: 'projects';
+        value: string | Project;
+      } | null)
+    | ({
+        relationTo: 'pagetemplate';
+        value: string | Pagetemplate;
+      } | null)
+    | ({
+        relationTo: 'templatecategories';
+        value: string | Templatecategory;
+      } | null)
+    | ({
+        relationTo: 'singlepagetemplate';
+        value: string | Singlepagetemplate;
+      } | null)
+    | ({
+        relationTo: 'comptemplate';
+        value: string | Comptemplate;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -252,6 +389,69 @@ export interface MediaSelect<T extends boolean = true> {
   height?: T;
   focalX?: T;
   focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "websites_select".
+ */
+export interface WebsitesSelect<T extends boolean = true> {
+  domain_name?: T;
+  'Page Data'?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "projects_select".
+ */
+export interface ProjectsSelect<T extends boolean = true> {
+  'Business Name'?: T;
+  Websites?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pagetemplate_select".
+ */
+export interface PagetemplateSelect<T extends boolean = true> {
+  Template_Name?: T;
+  Template_Type?: T;
+  Template_Code?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "templatecategories_select".
+ */
+export interface TemplatecategoriesSelect<T extends boolean = true> {
+  'Category Name'?: T;
+  slug?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "singlepagetemplate_select".
+ */
+export interface SinglepagetemplateSelect<T extends boolean = true> {
+  template_Name?: T;
+  template_Type?: T;
+  template_Code?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "comptemplate_select".
+ */
+export interface ComptemplateSelect<T extends boolean = true> {
+  template_Name?: T;
+  template_Type?: T;
+  template_Code?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

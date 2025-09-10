@@ -27,12 +27,18 @@ import CustomLayerManager from './CustomLayerManager'
 import CustomSelectorManager from './CustomSelectorManager'
 import CustomStyleManager from './CustomStyleManager'
 import CustomTraitManager from './CustomTraitManager'
+import { CustomPage } from './CustomPageTemplates'
 
 const defaultTabProps = {
   className: '!min-w-0',
 }
 
-export default function RightSidebar({ className }: React.HTMLAttributes<HTMLDivElement>) {
+interface RightSidebarProps extends React.HTMLAttributes<HTMLDivElement> {
+  prData?: any
+  handleSelectTempalte?: (id: string) => void
+}
+
+export default function RightSidebar({ className, prData }: RightSidebarProps) {
   const [selectedTab, setSelectedTab] = useState(0)
 
   return (
@@ -64,40 +70,7 @@ export default function RightSidebar({ className }: React.HTMLAttributes<HTMLDiv
         {selectedTab === 4 && (
           <PagesProvider>{(props) => <CustomPageManager {...props} />}</PagesProvider>
         )}
-        {selectedTab === 5 && (
-          <div className="p-4">
-            <h2 className="text-xl font-semibold mb-4">Template Gallery</h2>
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { id: 1, name: 'Portfolio', img: '/templates/portfolio.png' },
-                { id: 2, name: 'Business', img: '/templates/business.png' },
-                { id: 3, name: 'E-Commerce', img: '/templates/ecommerce.png' },
-                { id: 4, name: 'Landing Page', img: '/templates/landing.png' },
-                { id: 5, name: 'Blog', img: '/templates/blog.png' },
-              ].map((template) => (
-                <div
-                  key={template.id}
-                  className="border rounded-xl shadow hover:shadow-lg transition overflow-hidden"
-                >
-                  <img
-                    src={template.img}
-                    alt={template.name}
-                    className="w-full h-30 object-cover"
-                  />
-                  <div className="p-3 flex flex-col items-center">
-                    <p className="font-medium text-gray-800">{template.name}</p>
-                    <button
-                      className="mt-2 px-4 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-                      onClick={() => console.log('Selected:', template.name)}
-                    >
-                      Select
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        {selectedTab === 5 && <CustomPage prData={prData} />}
       </div>
     </div>
   )
