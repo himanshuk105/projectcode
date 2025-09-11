@@ -59,6 +59,7 @@ import Icon from '@mdi/react'
 import { mdiChevronDoubleDown, mdiDelete } from '@mdi/js'
 import { Page } from 'grapesjs'
 import { useEffect, useState } from 'react'
+import { a } from '@/lib/minor'
 
 type Templates = {
   PageTemplates: any
@@ -89,6 +90,7 @@ export default function CustomPageManager({
     'Page Templates': [
       { name: 'Landing Page', html: '<div><h1>Landing Page</h1></div>' },
       { name: 'Contact Page', html: '<div><h1>Contact Page</h1></div>' },
+      { name: 'Abouts Page', html: a },
     ],
   }
 

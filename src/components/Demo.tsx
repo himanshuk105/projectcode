@@ -59,6 +59,8 @@ const DefaultEditor = () => {
     const respone = data.data
     setPrData(respone.docs)
 
+    console.log(respone)
+
     editor.loadProjectData(selectedPage!)
 
     editor.BlockManager.add('hero-split-tailwindcsss', {
