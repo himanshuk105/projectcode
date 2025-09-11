@@ -1,5 +1,6 @@
 'use client'
 
+import { loginProps } from '@/app/(public-site)/login/page'
 import React, { useState } from 'react'
 
 // Types for form data
@@ -47,7 +48,7 @@ interface FormErrors {
 }
 
 // Login Page Component
-const LoginPage: React.FC = () => {
+const LoginPage = ({ handlePageChange }: loginProps) => {
   const [formData, setFormData] = useState<LoginFormData>({
     email: '',
     password: '',
@@ -235,12 +236,12 @@ const LoginPage: React.FC = () => {
           <div className="mt-6 text-center">
             <p className="text-gray-300">
               Don't have an account?{' '}
-              <a
-                href="#signup"
+              <button
+                onClick={() => handlePageChange('signup')}
                 className="text-purple-400 hover:text-purple-300 font-medium transition-colors"
               >
                 Sign up here
-              </a>
+              </button>
             </p>
           </div>
         </div>
@@ -250,7 +251,7 @@ const LoginPage: React.FC = () => {
 }
 
 // Signup Page Component
-const SignupPage: React.FC = () => {
+const SignupPage = ({ handlePageChange }: loginProps) => {
   const [formData, setFormData] = useState<SignupFormData>({
     firstName: '',
     lastName: '',
@@ -686,12 +687,12 @@ const SignupPage: React.FC = () => {
               <div className="text-center">
                 <p className="text-gray-300">
                   Already have an account?{' '}
-                  <a
-                    href="#login"
+                  <button
+                    onClick={() => handlePageChange('login')}
                     className="text-purple-400 hover:text-purple-300 font-medium transition-colors"
                   >
                     Sign in here
-                  </a>
+                  </button>
                 </p>
               </div>
             </form>

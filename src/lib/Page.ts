@@ -1388,6 +1388,8 @@ export const data1 = {
               'background-attachment',
               'background-position',
               'background-size',
+              'width',
+              'height',
             ],
             attributes: {
               id: 'mainWrapper',
@@ -2500,6 +2502,60 @@ export const data1 = {
         },
       ],
       id: 'programsPage',
+    },
+  ],
+  symbols: [],
+}
+
+export const Dynamic = {
+  dataSources: [],
+  assets: [],
+  styles: [
+    {
+      selectors: ['#i01f'],
+      wrapper: 1,
+      style: {},
+    },
+  ],
+  pages: [
+    {
+      frames: [
+        {
+          component: {
+            type: 'wrapper',
+            stylable: [
+              'background',
+              'background-color',
+              'background-image',
+              'background-repeat',
+              'background-attachment',
+              'background-position',
+              'background-size',
+            ],
+            attributes: {
+              id: 'i01f',
+            },
+            components: [
+              {
+                type: 'product-list',
+                attributes: {
+                  'data-limit': '2',
+                  id: 'ifr5',
+                },
+              },
+            ],
+            head: {
+              type: 'head',
+            },
+            docEl: {
+              tagName: 'html',
+            },
+          },
+          id: 'CxNLIwP4d2GujUH8',
+        },
+      ],
+      type: 'main',
+      id: 'LT3g8RUxPZ7xHoeb',
     },
   ],
   symbols: [],

@@ -1,5 +1,6 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
 import React, { useState, useEffect } from 'react'
 
 interface NavItem {
@@ -30,6 +31,8 @@ const Navbar: React.FC<NavbarProps> = ({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
   const [isScrolled, setIsScrolled] = useState<boolean>(false)
 
+  const pathname = usePathname()
+  console.log(pathname)
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = (): void => {
@@ -82,7 +85,7 @@ const Navbar: React.FC<NavbarProps> = ({
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={` ${pathname == '/pages' ? 'hidden' : ''} fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? 'bg-white/10 backdrop-blur-md border-b border-white/10 shadow-lg'
             : 'bg-transparent'

@@ -2,6 +2,16 @@ import { useEditor } from '@grapesjs/react'
 
 export const CustomPage = ({ prData }: any) => {
   const editor = useEditor()
+
+  // const [drag, setDrag] = useEffect(null);
+
+  // useEffect(() => {
+  //   console.log(editor.Canvas.getLastDragResult())
+  //   // if(drag!=null){
+
+  //   // }
+  // }, [editor])
+
   const handleSelectTempalte = (id: string) => {
     const data = structuredClone(prData)
     if (data != null) {
@@ -29,6 +39,7 @@ export const CustomPage = ({ prData }: any) => {
               <div className="p-3 flex flex-col items-center">
                 <p className="font-medium text-gray-800">{template['Template_Name']}</p>
                 <button
+                  draggable
                   className="mt-2 px-4 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
                   onClick={() => handleSelectTempalte(template.id)}
                 >
