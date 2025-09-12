@@ -12,7 +12,9 @@ import Topbar from './components/Topbar'
 import AISidebar from './components/LeftSide'
 import { Data, data1, Dynamic } from '@/lib/Page'
 import axios from 'axios'
-
+import temp1Data from './template/temp1'
+import { convertTemp1DataToGrapesJS } from '@/lib/convertTagToGrapesJS'
+import { addAllBlocks } from './blocks'
 const theme = createTheme({
   palette: {
     mode: 'dark',
@@ -22,7 +24,7 @@ const theme = createTheme({
 const gjsOptions: EditorConfig = {
   height: '100vh',
   container: '#gjs',
-  plugins: ['gjs-preset-webpage'],
+  plugins: [], // Remove the problematic plugin
   storageManager: false,
   undoManager: { trackSelection: false },
   selectorManager: { componentFirst: true },
@@ -47,6 +49,12 @@ const DefaultEditor = () => {
 
   const onEditor = async (editor: Editor) => {
     console.log('Editor loaded')
+
+    // Add all custom blocks FIRST
+    console.log('About to add custom blocks...')
+    addAllBlocks(editor)
+    console.log('Custom blocks added')
+
     // const fi = await payloadInstance.find({
     //   collection: 'pagetemplate',
     //   where: { ['Template Type.Category Name']: { equals: 'sports' } },
