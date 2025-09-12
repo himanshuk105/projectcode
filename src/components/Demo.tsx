@@ -10,10 +10,9 @@ import CustomModal from './components/CustomModal'
 
 import Topbar from './components/Topbar'
 import AISidebar from './components/LeftSide'
-import { Data, data1, Dynamic } from '@/lib/Page'
+
 import axios from 'axios'
-import temp1Data from './template/temp1'
-import { convertTemp1DataToGrapesJS } from '@/lib/convertTagToGrapesJS'
+
 import { addAllBlocks } from './blocks'
 const theme = createTheme({
   palette: {
@@ -48,17 +47,9 @@ const DefaultEditor = () => {
   // }
 
   const onEditor = async (editor: Editor) => {
-    console.log('Editor loaded')
 
-    // Add all custom blocks FIRST
-    console.log('About to add custom blocks...')
     addAllBlocks(editor)
-    console.log('Custom blocks added')
 
-    // const fi = await payloadInstance.find({
-    //   collection: 'pagetemplate',
-    //   where: { ['Template Type.Category Name']: { equals: 'sports' } },
-    // })
 
     const data = await axios(
       'http://localhost:3000/api/pagetemplate?where[Template_Type.slug][equals]=sports',
