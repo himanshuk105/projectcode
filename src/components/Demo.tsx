@@ -12,7 +12,9 @@ import Topbar from './components/Topbar'
 import AISidebar from './components/LeftSide'
 import { Data, data1, Dynamic } from '@/lib/Page'
 import axios from 'axios'
-
+import temp1Data from './template/temp1'
+import { convertTemp1DataToGrapesJS } from '@/lib/convertTagToGrapesJS'
+import { addAllBlocks } from './blocks'
 const theme = createTheme({
   palette: {
     mode: 'dark',
@@ -22,7 +24,7 @@ const theme = createTheme({
 const gjsOptions: EditorConfig = {
   height: '100vh',
   container: '#gjs',
-  plugins: ['gjs-preset-webpage'],
+  plugins: [], // Remove the problematic plugin
   storageManager: false,
   undoManager: { trackSelection: false },
   selectorManager: { componentFirst: true },
@@ -47,10 +49,25 @@ const DefaultEditor = () => {
 
   const onEditor = async (editor: Editor) => {
     console.log('Editor loaded')
+
+    // Add all custom blocks FIRST
+    console.log('About to add custom blocks...')
+    addAllBlocks(editor)
+    console.log('Custom blocks added')
+
     // const fi = await payloadInstance.find({
     //   collection: 'pagetemplate',
     //   where: { ['Template Type.Category Name']: { equals: 'sports' } },
     // })
+
+    const data = await axios(
+      'http://localhost:3000/api/pagetemplate?where[Template_Type.slug][equals]=sports',
+    )
+
+    const respone = data.data
+    setPrData(respone.docs)
+
+    editor.loadProjectData(selectedPage!)
 
     editor.BlockManager.add('hero-split-tailwindcsss', {
       label: 'Hero',
@@ -83,62 +100,6 @@ const DefaultEditor = () => {
     </section>
   `,
     })
-
-    editor.BlockManager.add('product-list', {
-      label: 'Product List',
-      category: 'Ecommerce',
-      media: `<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path d="M3,6H21V8H3V6M3,12H21V14H3V12M3,18H21V20H3V18Z" />
-            </svg>`,
-      content: { type: 'product-list', attributes: { 'data-limit': '6' } },
-    })
-
-    // ✅ Define dynamic component type
-    editor.DomComponents.addType('product-list', {
-      model: {
-        defaults: {
-          droppable: true,
-          editable: true,
-          removable: true,
-          script: function () {
-            // Runs inside GrapesJS canvas iframe
-            const limit = this.getAttribute('data-limit') || 6
-            fetch(`https://dummyjson.com/products?limit=5`)
-              .then((res) => res.json())
-              .then((data) => {
-                const el = this
-                el.innerHTML = `
-                <div class="grid grid-cols-3 gap-4">
-                  ${data.products
-                    .map(
-                      (p: any) => `
-                        <div class="border rounded p-2 shadow-sm">
-                          <img src="${p.thumbnail}" class="w-full h-40 object-cover rounded"/>
-                          <h3 class="font-semibold mt-2">${p.title}</h3>
-                          <p class="text-gray-700">$${p.price}</p>
-                        </div>
-                      `,
-                    )
-                    .join('')}
-                </div>
-              `
-              })
-          },
-        },
-      },
-    })
-
-    const data = await axios(
-      'http://localhost:3000/api/pagetemplate?where[Template_Type.slug][equals]=sports',
-    )
-
-    const respone = data.data
-    setPrData(respone.docs)
-
-    // console.log(respone)
-
-    // editor.loadProjectData(selectedPage!)
-    editor.loadProjectData(Dynamic)
     ;(window as any).editor = editor
   }
 

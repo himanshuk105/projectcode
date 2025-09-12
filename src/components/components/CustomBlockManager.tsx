@@ -12,7 +12,7 @@ export default function CustomBlockManager({
   dragStart,
   dragStop,
 }: CustomBlockManagerProps) {
-  console.log(mapCategoryBlocks)
+  console.log('mapCategoryBlocks', mapCategoryBlocks)
   return (
     <div className="gjs-custom-block-manager text-left">
       {Array.from(mapCategoryBlocks).map(([category, blocks]) => (
