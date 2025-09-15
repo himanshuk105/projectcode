@@ -2560,3 +2560,3288 @@ export const Dynamic = {
   ],
   symbols: [],
 }
+
+export const dynamic2 = {
+  dataSources: [],
+  assets: [],
+  styles: [
+    {
+      selectors: ['#iktj'],
+      style: {},
+    },
+  ],
+  pages: [
+    {
+      frames: [
+        {
+          component: {
+            type: 'wrapper',
+            stylable: [
+              'background',
+              'background-color',
+              'background-image',
+              'background-repeat',
+              'background-attachment',
+              'background-position',
+              'background-size',
+            ],
+            components: [
+              {
+                type: 'navbar',
+                classes: [
+                  'sticky',
+                  'top-0',
+                  'z-50',
+                  'flex',
+                  'justify-between',
+                  'items-center',
+                  'px-6',
+                  'md:px-8',
+                  'py-4',
+                  'bg-white/95',
+                  'backdrop-blur-md',
+                  'border-b',
+                  'border-gray-100',
+                  'transition-all',
+                  'duration-300',
+                  'relative',
+                ],
+                attributes: {},
+                components: [
+                  {
+                    type: 'navbar-logo',
+                    classes: [
+                      'text-2xl',
+                      'font-bold',
+                      'text-blue-600',
+                      'cursor-pointer',
+                      'select-none',
+                      'flex',
+                      'items-center',
+                      'transition-all',
+                      'duration-300',
+                      'hover:text-blue-700',
+                      'hover:scale-105',
+                    ],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'textnode',
+                        content: 'Brand Logo',
+                      },
+                    ],
+                  },
+                  {
+                    type: 'navbar-links',
+                    classes: ['hidden', 'md:flex', 'items-center', 'space-x-1'],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'navbar-link',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Home',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'About',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'About',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Services',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Services',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Contact',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Contact',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    type: 'navbar-actions',
+                    classes: ['hidden', 'md:flex', 'items-center', 'space-x-4'],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'navbar-cta',
+                        classes: [
+                          'bg-gradient-to-r',
+                          'from-blue-600',
+                          'to-blue-700',
+                          'text-white',
+                          'px-6',
+                          'py-2.5',
+                          'rounded-xl',
+                          'font-semibold',
+                          'text-sm',
+                          'cursor-pointer',
+                          'transition-all',
+                          'duration-300',
+                          'shadow-lg',
+                          'shadow-blue-600/30',
+                          'hover:-translate-y-0.5',
+                          'hover:shadow-xl',
+                          'hover:shadow-blue-600/40',
+                          'hover:from-blue-700',
+                          'hover:to-blue-800',
+                        ],
+                        attributes: {},
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Get Started',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    type: 'navbar-toggle',
+                    classes: [
+                      'md:hidden',
+                      'flex',
+                      'flex-col',
+                      'justify-center',
+                      'items-center',
+                      'w-6',
+                      'h-6',
+                      'cursor-pointer',
+                      'group',
+                    ],
+                    attributes: {},
+                  },
+                  {
+                    type: 'navbar-mobile-menu',
+                    classes: [
+                      'hidden',
+                      'md:hidden',
+                      'absolute',
+                      'top-full',
+                      'left-0',
+                      'w-full',
+                      'bg-white',
+                      'shadow-xl',
+                      'rounded-b-2xl',
+                      'p-6',
+                      'space-y-2',
+                      'animate-in',
+                      'slide-in-from-top-2',
+                      'duration-300',
+                    ],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'navbar-link',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Home',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'About',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'About',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Services',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Services',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Contact',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Contact',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-cta',
+                        classes: [
+                          'w-full',
+                          'mt-4',
+                          'bg-gradient-to-r',
+                          'from-blue-600',
+                          'to-blue-700',
+                          'text-white',
+                          'px-6',
+                          'py-3',
+                          'rounded-xl',
+                          'font-semibold',
+                          'text-sm',
+                          'cursor-pointer',
+                          'transition-all',
+                          'duration-300',
+                          'shadow-lg',
+                          'shadow-blue-600/30',
+                        ],
+                        attributes: {},
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Get Started',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'modern_hero_image',
+                classes: [
+                  'relative',
+                  'w-full',
+                  'min-h-screen',
+                  'flex',
+                  'items-center',
+                  'justify-center',
+                  'text-center',
+                  'bg-cover',
+                  'bg-center',
+                  'bg-no-repeat',
+                  'text-black',
+                  'bg-[url(https://images.unsplash.com/photo-1618005198919-5_ZuxsChDng?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)]',
+                ],
+                attributes: {
+                  id: 'iktj',
+                },
+                components: [
+                  {
+                    classes: ['bg-black/60', 'p-10', 'rounded-xl', 'max-w-4xl', 'mx-auto'],
+                    components: [
+                      {
+                        tagName: 'h1',
+                        type: 'text',
+                        content: 'Innovating the Future of Business',
+                        classes: [
+                          'text-4xl',
+                          'md:text-6xl',
+                          'font-extrabold',
+                          'mb-6',
+                          'leading-tight',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Innovating the Future of Business',
+                          },
+                        ],
+                      },
+                      {
+                        tagName: 'p',
+                        type: 'text',
+                        content:
+                          'Discover how cutting-edge technology and design come together to elevate your digital presence.',
+                        classes: ['text-lg', 'md:text-xl', 'mb-8', 'text-gray-200'],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content:
+                              'Discover how cutting-edge technology and design come together to elevate your digital presence.',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'link',
+                        content: 'Get Started',
+                        classes: [
+                          'bg-green-500',
+                          'hover:bg-green-600',
+                          'text-white',
+                          'font-medium',
+                          'py-3',
+                          'px-8',
+                          'rounded-lg',
+                          'shadow-lg',
+                          'transition',
+                          'duration-200',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Get Started',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'modern_hero_split',
+                classes: [
+                  'relative',
+                  'w-full',
+                  'py-20',
+                  'px-6',
+                  'md:px-12',
+                  'lg:px-24',
+                  'grid',
+                  'md:grid-cols-2',
+                  'items-center',
+                  'gap-12',
+                ],
+                components: [
+                  {
+                    classes: ['flex', 'flex-col', 'justify-center'],
+                    components: [
+                      {
+                        tagName: 'p',
+                        type: 'text',
+                        content: 'Transform Your Business',
+                        classes: [
+                          'text-sm',
+                          'md:text-base',
+                          'font-semibold',
+                          'text-indigo-600',
+                          'uppercase',
+                          'tracking-wide',
+                          'mb-4',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Transform Your Business',
+                          },
+                        ],
+                      },
+                      {
+                        tagName: 'h1',
+                        type: 'text',
+                        content: 'Modern Solutions for a Digital World',
+                        classes: [
+                          'text-3xl',
+                          'md:text-5xl',
+                          'font-extrabold',
+                          'text-gray-900',
+                          'leading-tight',
+                          'mb-6',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Modern Solutions for a Digital World',
+                          },
+                        ],
+                      },
+                      {
+                        tagName: 'p',
+                        type: 'text',
+                        content:
+                          'From websites to mobile apps, we deliver tailored digital solutions that help businesses grow, scale, and succeed globally.',
+                        classes: [
+                          'text-base',
+                          'md:text-lg',
+                          'text-gray-700',
+                          'leading-relaxed',
+                          'mb-8',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content:
+                              'From websites to mobile apps, we deliver tailored digital solutions that help businesses grow, scale, and succeed globally.',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'link',
+                        content: 'Contact Us',
+                        classes: [
+                          'bg-indigo-600',
+                          'hover:bg-indigo-700',
+                          'text-white',
+                          'font-medium',
+                          'py-3',
+                          'px-6',
+                          'rounded-lg',
+                          'shadow-md',
+                          'transition',
+                          'duration-200',
+                        ],
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Contact Us',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    classes: ['w-full', 'h-96', 'rounded-xl', 'overflow-hidden', 'shadow-lg'],
+                    components: [
+                      {
+                        type: 'image',
+                        resizable: {
+                          ratioDefault: 1,
+                        },
+                        classes: ['w-full', 'h-full', 'object-cover'],
+                        attributes: {
+                          src: 'https://images.unsplash.com/photo-1618005198919-5_ZuxsChDng?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+                          alt: 'Abstract digital landscape',
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+            head: {
+              type: 'head',
+            },
+            docEl: {
+              tagName: 'html',
+            },
+          },
+          id: '8Vsoa9AERNqxfKOv',
+        },
+      ],
+      type: 'main',
+      id: 'rTDd9TNONwAeMGCZ',
+    },
+  ],
+  symbols: [],
+}
+
+export const dynamic3 = {
+  dataSources: [],
+  assets: [],
+  styles: [
+    {
+      selectors: ['#iso3c'],
+      mediaText: '(max-width: 480px)',
+      atRuleType: 'media',
+      style: {},
+    },
+    {
+      selectors: ['#ixbnd'],
+      mediaText: '(max-width: 480px)',
+      atRuleType: 'media',
+      style: {},
+    },
+    {
+      selectors: ['#ixbnd'],
+      style: {},
+    },
+  ],
+  pages: [
+    {
+      frames: [
+        {
+          component: {
+            type: 'wrapper',
+            stylable: [
+              'background',
+              'background-color',
+              'background-image',
+              'background-repeat',
+              'background-attachment',
+              'background-position',
+              'background-size',
+            ],
+            components: [
+              {
+                type: 'navbar',
+                classes: [
+                  'sticky',
+                  'top-0',
+                  'z-50',
+                  'flex',
+                  'justify-between',
+                  'items-center',
+                  'px-6',
+                  'md:px-8',
+                  'py-4',
+                  'bg-white/95',
+                  'backdrop-blur-md',
+                  'border-b',
+                  'border-gray-100',
+                  'transition-all',
+                  'duration-300',
+                  'relative',
+                ],
+                attributes: {},
+                components: [
+                  {
+                    type: 'navbar-logo',
+                    classes: [
+                      'text-2xl',
+                      'font-bold',
+                      'text-blue-600',
+                      'cursor-pointer',
+                      'select-none',
+                      'flex',
+                      'items-center',
+                      'transition-all',
+                      'duration-300',
+                      'hover:text-blue-700',
+                      'hover:scale-105',
+                    ],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'textnode',
+                        content: 'Brand Logo',
+                      },
+                    ],
+                  },
+                  {
+                    type: 'navbar-links',
+                    classes: ['hidden', 'md:flex', 'items-center', 'space-x-1'],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'navbar-link',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Home',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'About',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'About',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Services',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Services',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Contact',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Contact',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    type: 'navbar-actions',
+                    classes: ['hidden', 'md:flex', 'items-center', 'space-x-4'],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'navbar-cta',
+                        classes: [
+                          'bg-gradient-to-r',
+                          'from-blue-600',
+                          'to-blue-700',
+                          'text-white',
+                          'px-6',
+                          'py-2.5',
+                          'rounded-xl',
+                          'font-semibold',
+                          'text-sm',
+                          'cursor-pointer',
+                          'transition-all',
+                          'duration-300',
+                          'shadow-lg',
+                          'shadow-blue-600/30',
+                          'hover:-translate-y-0.5',
+                          'hover:shadow-xl',
+                          'hover:shadow-blue-600/40',
+                          'hover:from-blue-700',
+                          'hover:to-blue-800',
+                        ],
+                        attributes: {},
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Get Started',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    type: 'navbar-toggle',
+                    classes: [
+                      'md:hidden',
+                      'flex',
+                      'flex-col',
+                      'justify-center',
+                      'items-center',
+                      'w-6',
+                      'h-6',
+                      'cursor-pointer',
+                      'group',
+                    ],
+                    attributes: {},
+                  },
+                  {
+                    type: 'navbar-mobile-menu',
+                    classes: [
+                      'hidden',
+                      'md:hidden',
+                      'absolute',
+                      'top-full',
+                      'left-0',
+                      'w-full',
+                      'bg-white',
+                      'shadow-xl',
+                      'rounded-b-2xl',
+                      'p-6',
+                      'space-y-2',
+                      'animate-in',
+                      'slide-in-from-top-2',
+                      'duration-300',
+                    ],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'navbar-link',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Home',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'About',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'About',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Services',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Services',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Contact',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Contact',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-cta',
+                        classes: [
+                          'w-full',
+                          'mt-4',
+                          'bg-gradient-to-r',
+                          'from-blue-600',
+                          'to-blue-700',
+                          'text-white',
+                          'px-6',
+                          'py-3',
+                          'rounded-xl',
+                          'font-semibold',
+                          'text-sm',
+                          'cursor-pointer',
+                          'transition-all',
+                          'duration-300',
+                          'shadow-lg',
+                          'shadow-blue-600/30',
+                        ],
+                        attributes: {},
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Get Started',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'hero-section',
+                classes: [
+                  'relative',
+                  'min-h-screen',
+                  'flex',
+                  'items-center',
+                  'justify-center',
+                  'bg-gradient-to-br',
+                  'from-blue-600',
+                  'to-purple-700',
+                  'text-white',
+                ],
+                attributes: {},
+                components: [
+                  {
+                    type: 'container',
+                    classes: ['max-w-7xl', 'mx-auto', 'px-4', 'sm:px-6', 'lg:px-8'],
+                    attributes: {},
+                    components: [
+                      {
+                        classes: ['text-center', 'max-w-4xl', 'mx-auto'],
+                        components: [
+                          {
+                            type: 'modern-heading',
+                            classes: ['text-5xl', 'md:text-7xl', 'font-bold', 'mb-6', 'text-white'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Build Amazing Landing Pages',
+                              },
+                            ],
+                            size: '',
+                          },
+                          {
+                            type: 'modern-paragraph',
+                            classes: ['text-xl', 'md:text-2xl', 'mb-8', 'text-blue-100'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'Create stunning, responsive landing pages with our modern component library.',
+                              },
+                            ],
+                            variant: '',
+                          },
+                          {
+                            classes: ['flex', 'flex-col', 'md:flex-row', 'gap-4', 'justify-center'],
+                            components: [
+                              {
+                                type: 'modern-button',
+                                classes: [
+                                  'bg-white',
+                                  'text-blue-600',
+                                  'hover:bg-blue-50',
+                                  'font-semibold',
+                                  'py-4',
+                                  'px-8',
+                                  'rounded-lg',
+                                  'transition-all',
+                                  'duration-300',
+                                  'transform',
+                                  'hover:scale-105',
+                                  'shadow-lg',
+                                ],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Get Started',
+                                  },
+                                ],
+                                variant: '',
+                                size: '',
+                              },
+                              {
+                                type: 'modern-button',
+                                classes: [
+                                  'border-2',
+                                  'border-white',
+                                  'text-white',
+                                  'hover:bg-white',
+                                  'hover:text-blue-600',
+                                  'font-semibold',
+                                  'py-4',
+                                  'px-8',
+                                  'rounded-lg',
+                                  'transition-all',
+                                  'duration-300',
+                                  'transform',
+                                  'hover:scale-105',
+                                ],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Learn More',
+                                  },
+                                ],
+                                variant: '',
+                                size: '',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'services-section',
+                classes: ['py-16', 'lg:py-24', 'bg-gray-50'],
+                attributes: {},
+                components: [
+                  {
+                    type: 'container',
+                    classes: ['max-w-7xl', 'mx-auto', 'px-4', 'sm:px-6', 'lg:px-8'],
+                    attributes: {},
+                    components: [
+                      {
+                        classes: ['text-center', 'mb-16'],
+                        components: [
+                          {
+                            type: 'modern-heading',
+                            classes: ['text-4xl', 'md:text-5xl', 'font-bold', 'mb-6'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Our Services',
+                              },
+                            ],
+                            size: '',
+                          },
+                          {
+                            type: 'modern-paragraph',
+                            classes: ['text-xl', 'text-gray-600', 'max-w-3xl', 'mx-auto'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  'We provide comprehensive solutions to help your business grow and succeed.',
+                              },
+                            ],
+                            variant: '',
+                          },
+                        ],
+                      },
+                      {
+                        classes: ['grid', 'md:grid-cols-2', 'lg:grid-cols-3', 'gap-8'],
+                        components: [
+                          {
+                            type: 'service-card',
+                            classes: [
+                              'bg-white',
+                              'rounded-xl',
+                              'shadow-lg',
+                              'p-8',
+                              'text-center',
+                              'hover:shadow-xl',
+                              'transition-all',
+                              'duration-300',
+                              'transform',
+                              'hover:-translate-y-2',
+                            ],
+                            attributes: {},
+                            components: [
+                              {
+                                classes: [
+                                  'w-16',
+                                  'h-16',
+                                  'bg-blue-100',
+                                  'rounded-full',
+                                  'flex',
+                                  'items-center',
+                                  'justify-center',
+                                  'mx-auto',
+                                  'mb-6',
+                                ],
+                                components: [
+                                  {
+                                    tagName: 'span',
+                                    classes: ['text-3xl'],
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: '🚀',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              {
+                                type: 'modern-heading',
+                                classes: ['text-2xl', 'font-bold', 'mb-4', 'text-gray-900'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Fast Performance',
+                                  },
+                                ],
+                                size: '',
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-gray-600'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content:
+                                      'Lightning-fast loading speeds and optimized performance for better user experience.',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'service-card',
+                            classes: [
+                              'bg-white',
+                              'rounded-xl',
+                              'shadow-lg',
+                              'p-8',
+                              'text-center',
+                              'hover:shadow-xl',
+                              'transition-all',
+                              'duration-300',
+                              'transform',
+                              'hover:-translate-y-2',
+                            ],
+                            attributes: {},
+                            components: [
+                              {
+                                classes: [
+                                  'w-16',
+                                  'h-16',
+                                  'bg-green-100',
+                                  'rounded-full',
+                                  'flex',
+                                  'items-center',
+                                  'justify-center',
+                                  'mx-auto',
+                                  'mb-6',
+                                ],
+                                components: [
+                                  {
+                                    tagName: 'span',
+                                    classes: ['text-3xl'],
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: '🎨',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              {
+                                type: 'modern-heading',
+                                classes: ['text-2xl', 'font-bold', 'mb-4', 'text-gray-900'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Beautiful Design',
+                                  },
+                                ],
+                                size: '',
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-gray-600'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content:
+                                      'Modern, clean designs that captivate your audience and drive conversions.',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'service-card',
+                            classes: [
+                              'bg-white',
+                              'rounded-xl',
+                              'shadow-lg',
+                              'p-8',
+                              'text-center',
+                              'hover:shadow-xl',
+                              'transition-all',
+                              'duration-300',
+                              'transform',
+                              'hover:-translate-y-2',
+                            ],
+                            attributes: {},
+                            components: [
+                              {
+                                classes: [
+                                  'w-16',
+                                  'h-16',
+                                  'bg-purple-100',
+                                  'rounded-full',
+                                  'flex',
+                                  'items-center',
+                                  'justify-center',
+                                  'mx-auto',
+                                  'mb-6',
+                                ],
+                                components: [
+                                  {
+                                    tagName: 'span',
+                                    classes: ['text-3xl'],
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: '📱',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              {
+                                type: 'modern-heading',
+                                classes: ['text-2xl', 'font-bold', 'mb-4', 'text-gray-900'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Responsive',
+                                  },
+                                ],
+                                size: '',
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-gray-600'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content:
+                                      'Fully responsive designs that look great on all devices and screen sizes.',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'modern-card',
+                            classes: [
+                              'bg-white',
+                              'rounded-xl',
+                              'shadow-lg',
+                              'p-6',
+                              'hover:shadow-xl',
+                              'transition-all',
+                              'duration-300',
+                              'transform',
+                              'hover:-translate-y-1',
+                            ],
+                            attributes: {},
+                            components: [
+                              {
+                                classes: ['mb-4'],
+                                components: [
+                                  {
+                                    type: 'modern-heading',
+                                    classes: [
+                                      'text-3xl',
+                                      'md:text-4xl',
+                                      'font-bold',
+                                      'text-gray-900',
+                                      'mb-4',
+                                    ],
+                                    attributes: {},
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'Card Title',
+                                      },
+                                    ],
+                                    size: '',
+                                  },
+                                ],
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-lg', 'text-gray-600', 'leading-relaxed', 'mb-6'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content:
+                                      'Card description goes here. This is a flexible card component.',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                            variant: '',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'footer-section',
+                classes: ['bg-gray-900', 'text-white', 'py-16'],
+                attributes: {},
+                components: [
+                  {
+                    type: 'container',
+                    classes: ['max-w-7xl', 'mx-auto', 'px-4', 'sm:px-6', 'lg:px-8'],
+                    attributes: {},
+                    components: [
+                      {
+                        classes: ['grid', 'md:grid-cols-4', 'gap-8', 'mb-8'],
+                        attributes: {
+                          id: 'iso3c',
+                        },
+                        components: [
+                          {
+                            components: [
+                              {
+                                type: 'modern-heading',
+                                classes: ['text-2xl', 'font-bold', 'mb-4', 'text-white'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Your Brand',
+                                  },
+                                ],
+                                size: '',
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-gray-400'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content:
+                                      'Building amazing digital experiences for modern businesses.',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                          },
+                          {
+                            components: [
+                              {
+                                tagName: 'h4',
+                                classes: ['text-lg', 'font-semibold', 'mb-4'],
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Quick Links',
+                                  },
+                                ],
+                              },
+                              {
+                                tagName: 'ul',
+                                classes: ['space-y-2'],
+                                components: [
+                                  {
+                                    tagName: 'li',
+                                    components: [
+                                      {
+                                        tagName: 'a',
+                                        classes: [
+                                          'text-gray-400',
+                                          'hover:text-white',
+                                          'transition-colors',
+                                        ],
+                                        attributes: {
+                                          href: '#',
+                                        },
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'Home',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    tagName: 'li',
+                                    components: [
+                                      {
+                                        tagName: 'a',
+                                        classes: [
+                                          'text-gray-400',
+                                          'hover:text-white',
+                                          'transition-colors',
+                                        ],
+                                        attributes: {
+                                          href: '#',
+                                        },
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'About',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    tagName: 'li',
+                                    components: [
+                                      {
+                                        tagName: 'a',
+                                        classes: [
+                                          'text-gray-400',
+                                          'hover:text-white',
+                                          'transition-colors',
+                                        ],
+                                        attributes: {
+                                          href: '#',
+                                        },
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'Services',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                          {
+                            components: [
+                              {
+                                tagName: 'h4',
+                                classes: ['text-lg', 'font-semibold', 'mb-4'],
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Contact',
+                                  },
+                                ],
+                              },
+                              {
+                                classes: ['space-y-2', 'text-gray-400'],
+                                components: [
+                                  {
+                                    tagName: 'p',
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'hello@company.com',
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    tagName: 'p',
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: '+1 (555) 123-4567',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                          {
+                            components: [
+                              {
+                                tagName: 'h4',
+                                classes: ['text-lg', 'font-semibold', 'mb-4'],
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Follow Us',
+                                  },
+                                ],
+                              },
+                              {
+                                classes: ['flex', 'space-x-4'],
+                                components: [
+                                  {
+                                    tagName: 'a',
+                                    classes: [
+                                      'text-gray-400',
+                                      'hover:text-white',
+                                      'transition-colors',
+                                    ],
+                                    attributes: {
+                                      href: '#',
+                                    },
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'Twitter',
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    tagName: 'a',
+                                    classes: [
+                                      'text-gray-400',
+                                      'hover:text-white',
+                                      'transition-colors',
+                                    ],
+                                    attributes: {
+                                      href: '#',
+                                    },
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'LinkedIn',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'border-t',
+                          'border-gray-800',
+                          'pt-8',
+                          'text-center',
+                          'text-gray-400',
+                        ],
+                        components: [
+                          {
+                            tagName: 'p',
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: '© 2024 Your Company. All rights reserved.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+            head: {
+              type: 'head',
+            },
+            docEl: {
+              tagName: 'html',
+            },
+          },
+          id: 'YGmyLaFP0xoxOJzm',
+        },
+      ],
+      type: 'main',
+      id: 'XvP0GibHFsmcQatH',
+    },
+  ],
+  symbols: [],
+}
+
+export const dyanmo = {
+  dataSources: [],
+  assets: [],
+  styles: [
+    {
+      selectors: ['#iiz6'],
+      style: {},
+    },
+    {
+      selectors: ['#i6a4k'],
+      style: {},
+    },
+    {
+      selectors: ['#ikuit'],
+      style: {},
+    },
+    {
+      selectors: ['#imzkv'],
+      style: {},
+    },
+    {
+      selectors: ['#isg9f'],
+      style: {},
+    },
+    {
+      selectors: ['#i5sl'],
+      wrapper: 1,
+      style: {},
+    },
+    {
+      selectors: ['#iczmg'],
+      style: {},
+    },
+    {
+      selectors: ['#it1u7'],
+      style: {},
+    },
+    {
+      selectors: ['#iu5kh'],
+      style: {},
+    },
+    {
+      selectors: ['#ibj3j'],
+      style: {},
+    },
+    {
+      selectors: ['#i29id'],
+      style: {},
+    },
+    {
+      selectors: ['#i3kdg'],
+      style: {},
+    },
+    {
+      selectors: ['#iu98n'],
+      style: {},
+    },
+    {
+      selectors: ['#imtmv'],
+      style: {},
+    },
+    {
+      selectors: ['#iv5oh'],
+      style: {},
+    },
+    {
+      selectors: ['#il5to7'],
+      style: {},
+    },
+    {
+      selectors: ['#icxjy8'],
+      style: {},
+    },
+  ],
+  pages: [
+    {
+      frames: [
+        {
+          component: {
+            type: 'wrapper',
+            stylable: [
+              'background',
+              'background-color',
+              'background-image',
+              'background-repeat',
+              'background-attachment',
+              'background-position',
+              'background-size',
+            ],
+            attributes: {
+              id: 'i5sl',
+            },
+            components: [
+              {
+                type: 'navbar',
+                classes: [
+                  'sticky',
+                  'top-0',
+                  'z-50',
+                  'flex',
+                  'justify-between',
+                  'items-center',
+                  'px-6',
+                  'md:px-8',
+                  'py-4',
+                  'bg-white/95',
+                  'backdrop-blur-md',
+                  'border-b',
+                  'border-gray-100',
+                  'transition-all',
+                  'duration-300',
+                  'relative',
+                ],
+                attributes: {},
+                components: [
+                  {
+                    type: 'navbar-logo',
+                    classes: [
+                      'text-2xl',
+                      'font-bold',
+                      'text-blue-600',
+                      'cursor-pointer',
+                      'select-none',
+                      'flex',
+                      'items-center',
+                      'transition-all',
+                      'duration-300',
+                      'hover:text-blue-700',
+                      'hover:scale-105',
+                    ],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'text',
+                        attributes: {
+                          id: 'iiz6',
+                        },
+                        components: [
+                          {
+                            type: 'textnode',
+                            content: 'Codified',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    type: 'navbar-links',
+                    classes: ['hidden', 'md:flex', 'items-center', 'space-x-1'],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'navbar-link',
+                        content: 'Home',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+
+                        components: [
+                          {
+                            type: 'text',
+                            attributes: {
+                              id: 'i6a4k',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Home',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'About',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'text',
+                            attributes: {
+                              id: 'i6a4k',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'About',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Services',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'text',
+                            attributes: {
+                              id: 'ikuit',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Contact',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Contact',
+                        classes: [
+                          'text-gray-700',
+                          'font-medium',
+                          'px-4',
+                          'py-2',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                          'hover:-translate-y-0.5',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'text',
+                            attributes: {
+                              id: 'imzkv',
+                            },
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'Service',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    type: 'navbar-actions',
+                    classes: ['hidden', 'md:flex', 'items-center', 'space-x-4'],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'navbar-cta',
+                        classes: [
+                          'bg-gradient-to-r',
+                          'from-blue-600',
+                          'to-blue-700',
+                          'text-white',
+                          'px-6',
+                          'py-2.5',
+                          'rounded-xl',
+                          'font-semibold',
+                          'text-sm',
+                          'cursor-pointer',
+                          'transition-all',
+                          'duration-300',
+                          'shadow-lg',
+                          'shadow-blue-600/30',
+                          'hover:-translate-y-0.5',
+                          'hover:shadow-xl',
+                          'hover:shadow-blue-600/40',
+                          'hover:from-blue-700',
+                          'hover:to-blue-800',
+                        ],
+                        attributes: {},
+                        components: [
+                          {
+                            type: 'text',
+                            content: 'Get Started',
+                            attributes: {
+                              id: 'isg9f',
+                            },
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    type: 'navbar-toggle',
+                    classes: [
+                      'md:hidden',
+                      'flex',
+                      'flex-col',
+                      'justify-center',
+                      'items-center',
+                      'w-6',
+                      'h-6',
+                      'cursor-pointer',
+                      'group',
+                    ],
+                    attributes: {},
+                  },
+                  {
+                    type: 'navbar-mobile-menu',
+                    classes: [
+                      'hidden',
+                      'md:hidden',
+                      'absolute',
+                      'top-full',
+                      'left-0',
+                      'w-full',
+                      'bg-white',
+                      'shadow-xl',
+                      'rounded-b-2xl',
+                      'p-6',
+                      'space-y-2',
+                      'animate-in',
+                      'slide-in-from-top-2',
+                      'duration-300',
+                    ],
+                    attributes: {},
+                    components: [
+                      {
+                        type: 'navbar-link',
+                        content: 'Home',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'text',
+                            content: 'Home',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'About',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'text',
+                            content: 'Home',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Services',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'text',
+                            content: 'Home',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-link',
+                        content: 'Contact',
+                        classes: [
+                          'block',
+                          'w-full',
+                          'text-center',
+                          'py-3',
+                          'px-4',
+                          'text-gray-700',
+                          'font-medium',
+                          'rounded-lg',
+                          'transition-all',
+                          'duration-300',
+                          'hover:text-blue-600',
+                          'hover:bg-blue-50',
+                        ],
+                        attributes: {
+                          href: '#',
+                        },
+                        components: [
+                          {
+                            type: 'text',
+                            content: 'Home',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'navbar-cta',
+                        classes: [
+                          'w-full',
+                          'mt-4',
+                          'bg-gradient-to-r',
+                          'from-blue-600',
+                          'to-blue-700',
+                          'text-white',
+                          'px-6',
+                          'py-3',
+                          'rounded-xl',
+                          'font-semibold',
+                          'text-sm',
+                          'cursor-pointer',
+                          'transition-all',
+                          'duration-300',
+                          'shadow-lg',
+                          'shadow-blue-600/30',
+                        ],
+                        attributes: {},
+                        components: [
+                          {
+                            type: 'text',
+                            content: 'Get Started',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'hero-section',
+                classes: [
+                  'relative',
+                  'min-h-screen',
+                  'flex',
+                  'items-center',
+                  'justify-center',
+                  'bg-gradient-to-br',
+                  'from-blue-600',
+                  'to-purple-700',
+                  'text-white',
+                ],
+                attributes: {
+                  id: 'i29id',
+                },
+                components: [
+                  {
+                    type: 'container',
+                    classes: ['max-w-7xl', 'mx-auto', 'px-4', 'sm:px-6', 'lg:px-8'],
+                    attributes: {},
+                    components: [
+                      {
+                        classes: ['text-center', 'max-w-4xl', 'mx-auto'],
+                        components: [
+                          {
+                            type: 'modern-heading',
+                            classes: ['text-5xl', 'md:text-7xl', 'font-bold', 'mb-6', 'text-white'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'text',
+                                attributes: {
+                                  id: 'iczmg',
+                                },
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'We Build Modern',
+                                  },
+                                ],
+                              },
+                            ],
+                            size: '',
+                          },
+                          {
+                            type: 'modern-paragraph',
+                            classes: ['text-lg', 'text-gray-600', 'leading-relaxed', 'mb-6'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'text',
+                                attributes: {
+                                  id: 'it1u7',
+                                },
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content:
+                                      'Continually negotiate virtual potentialities through cross functional testing procedures. Assertively reconceptualize just in time human capital whereas principle-centered methods.',
+                                  },
+                                ],
+                              },
+                            ],
+                            variant: '',
+                          },
+                          {
+                            classes: ['flex', 'flex-col', 'md:flex-row', 'gap-4', 'justify-center'],
+                            components: [
+                              {
+                                type: 'modern-button',
+                                classes: [
+                                  'bg-white',
+                                  'text-blue-600',
+                                  'hover:bg-blue-50',
+                                  'font-semibold',
+                                  'py-4',
+                                  'px-8',
+                                  'rounded-lg',
+                                  'transition-all',
+                                  'duration-300',
+                                  'transform',
+                                  'hover:scale-105',
+                                  'shadow-lg',
+                                ],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    attributes: {
+                                      id: 'iu5kh',
+                                    },
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'Click Me',
+                                      },
+                                    ],
+                                  },
+                                ],
+                                variant: '',
+                                size: '',
+                              },
+                              {
+                                type: 'modern-button',
+                                classes: [
+                                  'border-2',
+                                  'border-white',
+                                  'text-white',
+                                  'hover:bg-white',
+                                  'hover:text-blue-600',
+                                  'font-semibold',
+                                  'py-4',
+                                  'px-8',
+                                  'rounded-lg',
+                                  'transition-all',
+                                  'duration-300',
+                                  'transform',
+                                  'hover:scale-105',
+                                ],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    attributes: {
+                                      id: 'ibj3j',
+                                    },
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'About Us',
+                                      },
+                                    ],
+                                  },
+                                ],
+                                variant: '',
+                                size: '',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'services-section',
+                classes: ['py-16', 'lg:py-24', 'bg-gray-50'],
+                attributes: {},
+                components: [
+                  {
+                    type: 'container',
+                    classes: ['max-w-7xl', 'mx-auto', 'px-4', 'sm:px-6', 'lg:px-8'],
+                    attributes: {},
+                    components: [
+                      {
+                        classes: ['text-center', 'mb-16'],
+                        components: [
+                          {
+                            type: 'modern-heading',
+                            classes: ['text-4xl', 'md:text-5xl', 'font-bold', 'mb-6'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'text',
+                                attributes: {
+                                  id: 'i3kdg',
+                                },
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Out Services',
+                                  },
+                                ],
+                              },
+                            ],
+                            size: '',
+                          },
+                          {
+                            type: 'modern-paragraph',
+                            classes: ['text-xl', 'text-gray-600', 'max-w-3xl', 'mx-auto'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'text',
+                                attributes: {
+                                  id: 'iu98n',
+                                },
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'We make problems look small.',
+                                  },
+                                ],
+                              },
+                            ],
+                            variant: '',
+                          },
+                        ],
+                      },
+                      {
+                        classes: ['grid', 'md:grid-cols-2', 'lg:grid-cols-3', 'gap-8'],
+                        components: [
+                          {
+                            type: 'service-card',
+                            classes: [
+                              'bg-white',
+                              'rounded-xl',
+                              'shadow-lg',
+                              'p-8',
+                              'text-center',
+                              'hover:shadow-xl',
+                              'transition-all',
+                              'duration-300',
+                              'transform',
+                              'hover:-translate-y-2',
+                            ],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'image',
+                                resizable: {
+                                  ratioDefault: 1,
+                                },
+                                classes: [
+                                  'w-16',
+                                  'h-16',
+                                  'bg-blue-100',
+                                  'rounded-full',
+                                  'flex',
+                                  'items-center',
+                                  'justify-center',
+                                  'mx-auto',
+                                  'mb-6',
+                                ],
+                                attributes: {
+                                  src: 'https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                  alt: 'Avatar-image',
+                                },
+                              },
+                              {
+                                type: 'modern-heading',
+                                classes: ['text-2xl', 'font-bold', 'mb-4', 'text-gray-900'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    attributes: {
+                                      id: 'imtmv',
+                                    },
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'AI/ML',
+                                      },
+                                    ],
+                                  },
+                                ],
+                                size: '',
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                content: 'Lightning-fast loading speeds and optimized',
+                                classes: ['text-gray-600'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'I am modern p',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'service-card',
+                            classes: [
+                              'bg-white',
+                              'rounded-xl',
+                              'shadow-lg',
+                              'p-8',
+                              'text-center',
+                              'hover:shadow-xl',
+                              'transition-all',
+                              'duration-300',
+                              'transform',
+                              'hover:-translate-y-2',
+                            ],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'image',
+                                resizable: {
+                                  ratioDefault: 1,
+                                },
+                                classes: [
+                                  'w-16',
+                                  'h-16',
+                                  'bg-blue-100',
+                                  'rounded-full',
+                                  'flex',
+                                  'items-center',
+                                  'justify-center',
+                                  'mx-auto',
+                                  'mb-6',
+                                ],
+                                attributes: {
+                                  src: 'https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                  alt: 'Avatar-image',
+                                },
+                              },
+                              {
+                                type: 'modern-heading',
+                                classes: ['text-2xl', 'font-bold', 'mb-4', 'text-gray-900'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'Modern Heading',
+                                    attributes: {
+                                      id: 'iv5oh',
+                                    },
+                                  },
+                                ],
+                                size: '',
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                content: 'Lightning-fast loading speeds and optimized',
+                                classes: ['text-gray-600'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'I am modern p',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'service-card',
+                            classes: [
+                              'bg-white',
+                              'rounded-xl',
+                              'shadow-lg',
+                              'p-8',
+                              'text-center',
+                              'hover:shadow-xl',
+                              'transition-all',
+                              'duration-300',
+                              'transform',
+                              'hover:-translate-y-2',
+                            ],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'image',
+                                resizable: {
+                                  ratioDefault: 1,
+                                },
+                                classes: [
+                                  'w-16',
+                                  'h-16',
+                                  'bg-blue-100',
+                                  'rounded-full',
+                                  'flex',
+                                  'items-center',
+                                  'justify-center',
+                                  'mx-auto',
+                                  'mb-6',
+                                ],
+                                attributes: {
+                                  src: 'https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                  alt: 'Avatar-image',
+                                },
+                              },
+                              {
+                                type: 'modern-heading',
+                                classes: ['text-2xl', 'font-bold', 'mb-4', 'text-gray-900'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'Modern Heading',
+                                  },
+                                ],
+                                size: '',
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                content: 'Lightning-fast loading speeds and optimized',
+                                classes: ['text-gray-600'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'I am modern p',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                          },
+                          {
+                            type: 'service-card',
+                            classes: [
+                              'bg-white',
+                              'rounded-xl',
+                              'shadow-lg',
+                              'p-8',
+                              'text-center',
+                              'hover:shadow-xl',
+                              'transition-all',
+                              'duration-300',
+                              'transform',
+                              'hover:-translate-y-2',
+                            ],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'image',
+                                resizable: {
+                                  ratioDefault: 1,
+                                },
+                                classes: [
+                                  'w-16',
+                                  'h-16',
+                                  'bg-blue-100',
+                                  'rounded-full',
+                                  'flex',
+                                  'items-center',
+                                  'justify-center',
+                                  'mx-auto',
+                                  'mb-6',
+                                ],
+                                attributes: {
+                                  src: 'https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                  alt: 'Avatar-image',
+                                },
+                              },
+                              {
+                                type: 'modern-heading',
+                                classes: ['text-2xl', 'font-bold', 'mb-4', 'text-gray-900'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'Modern Heading',
+                                  },
+                                ],
+                                size: '',
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                content: 'Lightning-fast loading speeds and optimized',
+                                classes: ['text-gray-600'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'I am modern p',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'testimonials-section',
+                classes: ['py-16', 'lg:py-24'],
+                attributes: {},
+                components: [
+                  {
+                    type: 'container',
+                    classes: ['max-w-7xl', 'mx-auto', 'px-4', 'sm:px-6', 'lg:px-8'],
+                    attributes: {},
+                    components: [
+                      {
+                        classes: ['text-center', 'mb-16'],
+                        components: [
+                          {
+                            type: 'modern-heading',
+                            classes: ['text-4xl', 'md:text-5xl', 'font-bold', 'mb-6'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: 'What Our Clients Say',
+                              },
+                            ],
+                            size: '',
+                          },
+                          {
+                            type: 'modern-paragraph',
+                            classes: ['text-xl', 'text-gray-600', 'max-w-3xl', 'mx-auto'],
+                            attributes: {},
+                            components: [
+                              {
+                                type: 'textnode',
+                                content:
+                                  "Don't just take our word for it. Here's what our satisfied customers have to say.",
+                              },
+                            ],
+                            variant: '',
+                          },
+                        ],
+                      },
+                      {
+                        classes: ['grid', 'md:grid-cols-2', 'lg:grid-cols-3', 'gap-8'],
+                        components: [
+                          {
+                            type: 'testimonial-card',
+                            classes: ['bg-white', 'rounded-xl', 'shadow-lg', 'p-8'],
+                            attributes: {},
+                            components: [
+                              {
+                                classes: ['flex', 'items-center', 'mb-6'],
+                                components: [
+                                  {
+                                    type: 'text',
+                                    classes: ['flex', 'text-yellow-400', 'mr-4'],
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: '⭐⭐⭐⭐⭐',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-lg', 'text-gray-700', 'mb-6', 'italic'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'I am modern p',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                              {
+                                classes: ['flex', 'items-center'],
+                                components: [
+                                  {
+                                    classes: [
+                                      'w-12',
+                                      'h-12',
+                                      'bg-gray-300',
+                                      'rounded-full',
+                                      'mr-4',
+                                    ],
+                                  },
+                                  {
+                                    components: [
+                                      {
+                                        tagName: 'h4',
+                                        type: 'text',
+                                        classes: ['font-semibold', 'text-gray-900'],
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'John Doe',
+                                          },
+                                        ],
+                                      },
+                                      {
+                                        tagName: 'p',
+                                        type: 'text',
+                                        classes: ['text-gray-600', 'text-sm'],
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'CEO, Company Inc.',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                          {
+                            type: 'testimonial-card',
+                            classes: ['bg-white', 'rounded-xl', 'shadow-lg', 'p-8'],
+                            attributes: {
+                              id: 'il5to7',
+                            },
+                            components: [
+                              {
+                                classes: ['flex', 'items-center', 'mb-6'],
+                                components: [
+                                  {
+                                    type: 'text',
+                                    classes: ['flex', 'text-yellow-400', 'mr-4'],
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: '⭐⭐⭐⭐⭐',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-lg', 'text-gray-700', 'mb-6', 'italic'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'I am modern p',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                              {
+                                classes: ['flex', 'items-center'],
+                                components: [
+                                  {
+                                    classes: [
+                                      'w-12',
+                                      'h-12',
+                                      'bg-gray-300',
+                                      'rounded-full',
+                                      'mr-4',
+                                    ],
+                                  },
+                                  {
+                                    components: [
+                                      {
+                                        tagName: 'h4',
+                                        type: 'text',
+                                        classes: ['font-semibold', 'text-gray-900'],
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'John Doe',
+                                          },
+                                        ],
+                                      },
+                                      {
+                                        tagName: 'p',
+                                        type: 'text',
+                                        classes: ['text-gray-600', 'text-sm'],
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'CEO, Company Inc.',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                          {
+                            type: 'testimonial-card',
+                            classes: ['bg-white', 'rounded-xl', 'shadow-lg', 'p-8'],
+                            attributes: {
+                              id: 'icxjy8',
+                            },
+                            components: [
+                              {
+                                classes: ['flex', 'items-center', 'mb-6'],
+                                components: [
+                                  {
+                                    type: 'text',
+                                    classes: ['flex', 'text-yellow-400', 'mr-4'],
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: '⭐⭐⭐⭐⭐',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-lg', 'text-gray-700', 'mb-6', 'italic'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'I am modern p',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                              {
+                                classes: ['flex', 'items-center'],
+                                components: [
+                                  {
+                                    classes: [
+                                      'w-12',
+                                      'h-12',
+                                      'bg-gray-300',
+                                      'rounded-full',
+                                      'mr-4',
+                                    ],
+                                  },
+                                  {
+                                    components: [
+                                      {
+                                        tagName: 'h4',
+                                        type: 'text',
+                                        classes: ['font-semibold', 'text-gray-900'],
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'John Doe',
+                                          },
+                                        ],
+                                      },
+                                      {
+                                        tagName: 'p',
+                                        type: 'text',
+                                        classes: ['text-gray-600', 'text-sm'],
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'CEO, Company Inc.',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                          {
+                            type: 'testimonial-card',
+                            classes: ['bg-white', 'rounded-xl', 'shadow-lg', 'p-8'],
+                            attributes: {},
+                            components: [
+                              {
+                                classes: ['flex', 'items-center', 'mb-6'],
+                                components: [
+                                  {
+                                    type: 'text',
+                                    classes: ['flex', 'text-yellow-400', 'mr-4'],
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: '⭐⭐⭐⭐⭐',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-lg', 'text-gray-700', 'mb-6', 'italic'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'I am modern p',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                              {
+                                classes: ['flex', 'items-center'],
+                                components: [
+                                  {
+                                    classes: [
+                                      'w-12',
+                                      'h-12',
+                                      'bg-gray-300',
+                                      'rounded-full',
+                                      'mr-4',
+                                    ],
+                                  },
+                                  {
+                                    components: [
+                                      {
+                                        tagName: 'h4',
+                                        type: 'text',
+                                        classes: ['font-semibold', 'text-gray-900'],
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'John Doe',
+                                          },
+                                        ],
+                                      },
+                                      {
+                                        tagName: 'p',
+                                        type: 'text',
+                                        classes: ['text-gray-600', 'text-sm'],
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'CEO, Company Inc.',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                type: 'footer-section',
+                classes: ['bg-gray-900', 'text-white', 'py-16'],
+                attributes: {},
+                components: [
+                  {
+                    type: 'container',
+                    classes: ['max-w-7xl', 'mx-auto', 'px-4', 'sm:px-6', 'lg:px-8'],
+                    attributes: {},
+                    components: [
+                      {
+                        classes: ['grid', 'md:grid-cols-4', 'gap-8', 'mb-8'],
+                        components: [
+                          {
+                            components: [
+                              {
+                                type: 'modern-heading',
+                                classes: ['text-2xl', 'font-bold', 'mb-4', 'text-white'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'Modern Heading',
+                                  },
+                                ],
+                                size: '',
+                              },
+                              {
+                                type: 'modern-paragraph',
+                                classes: ['text-gray-400'],
+                                attributes: {},
+                                components: [
+                                  {
+                                    type: 'text',
+                                    content: 'I am modern p',
+                                  },
+                                ],
+                                variant: '',
+                              },
+                            ],
+                          },
+                          {
+                            components: [
+                              {
+                                tagName: 'h4',
+                                type: 'text',
+                                classes: ['text-lg', 'font-semibold', 'mb-4'],
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Quick Links',
+                                  },
+                                ],
+                              },
+                              {
+                                tagName: 'ul',
+                                classes: ['space-y-2'],
+                                components: [
+                                  {
+                                    tagName: 'li',
+                                    components: [
+                                      {
+                                        type: 'link',
+                                        classes: [
+                                          'text-gray-400',
+                                          'hover:text-white',
+                                          'transition-colors',
+                                        ],
+                                        attributes: {
+                                          href: '#',
+                                        },
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'Home',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    tagName: 'li',
+                                    components: [
+                                      {
+                                        type: 'link',
+                                        classes: [
+                                          'text-gray-400',
+                                          'hover:text-white',
+                                          'transition-colors',
+                                        ],
+                                        attributes: {
+                                          href: '#',
+                                        },
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'About',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    tagName: 'li',
+                                    components: [
+                                      {
+                                        type: 'link',
+                                        classes: [
+                                          'text-gray-400',
+                                          'hover:text-white',
+                                          'transition-colors',
+                                        ],
+                                        attributes: {
+                                          href: '#',
+                                        },
+                                        components: [
+                                          {
+                                            type: 'textnode',
+                                            content: 'Services',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                          {
+                            components: [
+                              {
+                                tagName: 'h4',
+                                type: 'text',
+                                classes: ['text-lg', 'font-semibold', 'mb-4'],
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Contact',
+                                  },
+                                ],
+                              },
+                              {
+                                classes: ['space-y-2', 'text-gray-400'],
+                                components: [
+                                  {
+                                    tagName: 'p',
+                                    type: 'text',
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'hello@company.com',
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    tagName: 'p',
+                                    type: 'text',
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: '+1 (555) 123-4567',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                          {
+                            components: [
+                              {
+                                tagName: 'h4',
+                                type: 'text',
+                                classes: ['text-lg', 'font-semibold', 'mb-4'],
+                                components: [
+                                  {
+                                    type: 'textnode',
+                                    content: 'Follow Us',
+                                  },
+                                ],
+                              },
+                              {
+                                classes: ['flex', 'space-x-4'],
+                                components: [
+                                  {
+                                    type: 'link',
+                                    classes: [
+                                      'text-gray-400',
+                                      'hover:text-white',
+                                      'transition-colors',
+                                    ],
+                                    attributes: {
+                                      href: '#',
+                                    },
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'Twitter',
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    type: 'link',
+                                    classes: [
+                                      'text-gray-400',
+                                      'hover:text-white',
+                                      'transition-colors',
+                                    ],
+                                    attributes: {
+                                      href: '#',
+                                    },
+                                    components: [
+                                      {
+                                        type: 'textnode',
+                                        content: 'LinkedIn',
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                      {
+                        classes: [
+                          'border-t',
+                          'border-gray-800',
+                          'pt-8',
+                          'text-center',
+                          'text-gray-400',
+                        ],
+                        components: [
+                          {
+                            tagName: 'p',
+                            type: 'text',
+                            components: [
+                              {
+                                type: 'textnode',
+                                content: '© 2024 Your Company. All rights reserved.',
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+            head: {
+              type: 'head',
+            },
+            docEl: {
+              tagName: 'html',
+            },
+          },
+          id: 'fQPoJ8IckffQgDub',
+        },
+      ],
+      type: 'main',
+      id: 'Mqy9KuhaZhQyCGBJ',
+    },
+  ],
+  symbols: [],
+}

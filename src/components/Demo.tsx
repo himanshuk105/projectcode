@@ -28,7 +28,10 @@ const gjsOptions: EditorConfig = {
   undoManager: { trackSelection: false },
   selectorManager: { componentFirst: true },
   canvas: {
-    styles: ['https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'],
+    styles: [
+      'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css',
+      'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js',
+    ],
   },
 }
 
@@ -47,9 +50,7 @@ const DefaultEditor = () => {
   // }
 
   const onEditor = async (editor: Editor) => {
-
     addAllBlocks(editor)
-
 
     const data = await axios(
       'http://localhost:3000/api/pagetemplate?where[Template_Type.slug][equals]=sports',
